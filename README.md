@@ -69,7 +69,7 @@ const DemoComp = () => {
 import { app_confirm } from "react-async-alert-confirm";
 
 const DemoComp = () => {
-  const clickToAlert = async () => {
+  const clickToConfirm = async () => {
     /* All the Parameters are optional, no required */
 
     await app_confirm({
@@ -88,7 +88,7 @@ const DemoComp = () => {
 
   return (
     <>
-      <button onClick={clickToAlert}>Click Me</button>
+      <button onClick={clickToConfirm}>Click Me</button>
     </>
   );
 };
