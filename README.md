@@ -27,8 +27,8 @@ npm i react-async-alert-confirm
     <div id="root"></div>
 
     <div id="confirm-and-alert"></div>
-    /* This is your portal root, default Id uses "confirm-and-alert", you could
-    also rename it */
+    /* Add this to be your portal root, default Id uses "confirm-and-alert", you
+    could also rename it */
   </body>
 </html>
 ```
