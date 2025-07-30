@@ -1,6 +1,6 @@
 {
   "name": "react-async-alert-confirm",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "license": "MIT",
   "description": "A reusable React component library for alert dialog and confirm dialog",
   "type": "module",
