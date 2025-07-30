@@ -36,10 +36,9 @@ npm i react-async-alert-confirm
 </html>
 ```
 
-2. In your component, import css and write the js you need.
+2. In your component, import alert or confirm function and use it.
 
 ```js
-import "react-async-alert-confirm/dist/react-async-alert-confirm.css";
 import { app_alert, app_confirm } from "react-async-alert-confirm";
 
 const DemoComp = () => {
