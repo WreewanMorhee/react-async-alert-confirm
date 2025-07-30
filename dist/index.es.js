@@ -789,4 +789,3 @@ export {
   Rr as app_alert,
   wr as app_confirm
 };
-//# sourceMappingURL=index.es.js.map

@@ -27,7 +27,6 @@ export default defineConfig({
       }
     },
     cssCodeSplit: false, 
-    sourcemap: true,
     outDir: "dist",
   },
 });
