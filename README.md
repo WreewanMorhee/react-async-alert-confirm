@@ -39,7 +39,7 @@ npm i react-async-alert-confirm
 2. In your component, import alert or confirm function and use it.
 
 ```js
-import { app_alert, app_confirm } from "react-async-alert-confirm";
+import { app_alert } from "react-async-alert-confirm";
 
 const DemoComp = () => {
   const clickToAlert = async () => {
@@ -57,27 +57,38 @@ const DemoComp = () => {
     /* This will be executed after you click okay btn on Alert Dialog ! */
   };
 
-  const clickToConfirm = async () => {
+  return (
+    <>
+      <button onClick={clickToAlert}>Click Me</button>
+    </>
+  );
+};
+```
+
+```js
+import { app_confirm } from "react-async-alert-confirm";
+
+const DemoComp = () => {
+  const clickToAlert = async () => {
     /* All the Parameters are optional, no required */
 
-    const is_confirm = await app_confirm({
+    await app_confirm({
       title: "Your Confirm Title",
       content: "I Am a Confirm Content",
       cancel_text: "Cancel",
       confirm_text: "Confirm",
-      node_name: "confirm-and-alert",
+      node_name:
+        "confirm-and-alert" /* If you changed Id of portal root, remember to specify here */,
     });
-    /* is_confirm will be true if user click confirm btn, will be false if user click cancel btn */
 
     console.warn(is_confirm, "after confirm");
-    /* This will be executed after you click okay btn on Alert Dialog ! */
+    /* This will be executed after you click okay btn on Confirm Dialog ! */
+    /* is_confirm will be true if user click confirm btn, will be false if user click cancel btn */
   };
 
   return (
     <>
       <button onClick={clickToAlert}>Click Me</button>
-
-      <button onClick={clickToConfirm}>Click Me</button>
     </>
   );
 };
