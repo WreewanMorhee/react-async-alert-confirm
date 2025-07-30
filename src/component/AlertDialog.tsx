@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./dialog.module.css";
 
 const AlertDialog = ({
@@ -12,20 +12,12 @@ const AlertDialog = ({
   yes?: () => void;
   confirm_text?: string;
 }) => {
-
-  console.warn(6)
   const [hide, set_hide] = useState(false);
 
   const clickToYes = () => {
     set_hide(true);
   };
 
-  console.warn(7)
-
-  useEffect(() => {
-
-  console.warn(8)
-  }, [])
 
   return (
     <div
