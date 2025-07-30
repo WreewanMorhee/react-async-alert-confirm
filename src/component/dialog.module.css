@@ -1,0 +1,145 @@
+.modal-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    z-index: 20;
+    opacity: 0;
+  }
+  
+  .modal-container {
+    padding: 12px 64px;
+    background-color: white;
+    box-shadow: 2px 2px 30px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .modal-container {
+      width: calc(100% - 32px);
+      max-width: calc(100% - 32px);
+      padding: 24px;
+    }
+  }
+
+
+  .modal-title {
+    display: flex;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+    gap: 16px;
+  }
+  @media (max-width: 768px) {
+    .modal-actions  {
+      gap: 8px;
+    }
+  }
+
+  .modal-button {
+    padding: 8px 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 136px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .modal-button-cancel {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+
+  @keyframes board_show {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes overlay_show {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+
+  @keyframes board_hide {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    to {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+
+  @keyframes overlay_hide {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+.overlay-show {
+    animation: overlay_show 0.3s forwards;
+  }
+ .overlay-hide {
+    animation: overlay_hide 0.3s forwards;
+  }
+.container-show {
+    animation: board_show 0.3s forwards;
+  }
+.container-hide {
+    animation: board_hide 0.3s forwards;
+  }
