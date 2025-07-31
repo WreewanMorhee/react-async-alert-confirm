@@ -91,9 +91,13 @@ const DemoComp = () => {
 };
 ```
 
-### No Any Callback Function Needed, Just Handle User Behaviour for Yes or No, And Write It in Async/Await Way
+### No Any Callback Function Needed.
 
-### Only React and Pure CSS, Super Fast! And Also Enhance UX and interaction!
+### Seperate Alert/Confirm Dialog and Your Other Business/Display Logic Very Clearly.
+
+### Write It in Async/Await Way
+
+### Only React and Pure CSS, Super Fast! And Also Enhance UX and Interaction!
 
 <br /><br />
 
