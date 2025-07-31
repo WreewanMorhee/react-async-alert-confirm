@@ -69,7 +69,7 @@ const DemoComp = () => {
   const clickToConfirm = async () => {
     /* All the Parameters are optional, no required */
 
-    await app_confirm({
+    const is_confirm = await app_confirm({
       title: "Your Confirm Title",
       content: "I Am a Confirm Content",
       cancel_text: "Cancel",
