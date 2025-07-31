@@ -1,6 +1,18 @@
 {
   "name": "react-async-alert-confirm",
-  "version": "1.1.8",
+  "version": "1.1.9",
+  "author": "WreewanMorhee",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/WreewanMorhee/react-async-alert-confirm"
+  },
+  "keywords": [
+      "react",
+      "async",
+      "alert dialog",
+      "confirm dialog"
+  ],
+  "homepage": "https://github.com/WreewanMorhee/react-async-alert-confirm",
   "license": "MIT",
   "description": "A reusable React component library for alert dialog and confirm dialog",
   "type": "module",
